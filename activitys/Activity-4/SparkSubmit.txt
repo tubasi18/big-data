@@ -1,0 +1,22 @@
+
+Becouse im use the scala build.sbt project i use the package command
+Command (package)  : to build the jar file of my project 
+
+I run the jar file local machine 
+spark-submit --master local  --deploy-mode client  --class main target/scala-2.12/spraksubmit_2.12-0.1.0-SNAPSHOT.jar C:\Users\PCGAMING\Desktop\Bigdata\spraksubmit\src\main\scala\BigExample2File.txt 
+
+Then here i add the driver 
+spark-class org.apache.spark.deploy.master.Master 
+
+
+Here we add two workers to the cluster
+spark-class org.apache.spark.deploy.worker.Worker spark://192.168.1.100:7077  
+spark-class org.apache.spark.deploy.worker.Worker spark://192.168.1.100:7077 
+
+
+
+I run jar file in the  cilent mode  first  and we replace the local to master machine and submit the jar to the master driver
+spark-submit --master spark://192.168.1.100:7077  --deploy-mode client  --class main target/scala-2.12/spraksubmit_2.12-0.1.0-SNAPSHOT.jar C:\Users\PCGAMING\Desktop\Bigdata\spraksubmit\src\main\scala\BigExample2File.txt
+
+Then ssame opertion in the cluster mode and the job submited to the driver and the driver distribution the job to the  workers 
+ spark-submit --master spark://192.168.1.100:7077  --deploy-mode cluster --class main target/scala-2.12/spraksubmit_2.12-0.1.0-SNAPSHOT.jar C:\Users\PCGAMING\Desktop\Bigdata\spraksubmit\src\main\scala\BigExample2File.txt 

@@ -1,0 +1,18 @@
+run zookeeper
+.\zookeeper-server-start.bat ..\..\config\zookeeper.properties 
+run kafka
+.\kafka-server-start.bat ..\..\config\server.properties
+
+NAME of the topic
+.\kafka-topics.bat --create --topic Final --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+	
+write 
+kafka-console-producer.bat --topic [topic] --broker-list localhost:9092
+
+read
+kafka-console-consumer.bat --topic [topic] --bootstrap-server localhost:9092 --from-beginning
+
+
+
+
+s

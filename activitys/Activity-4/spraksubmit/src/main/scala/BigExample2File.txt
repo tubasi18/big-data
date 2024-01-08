@@ -1,0 +1,12 @@
+This is a sample text file
+It contains several lines of text
+You can use this file as input for your Spark program.
+Please save it as "textile.txt"
+MuhammadQzih MuhammadQzih
+Ahmad
+Ahmad
+Please
+Please
+file
+file
+text

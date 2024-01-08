@@ -1,0 +1,10 @@
+[debug] Created transactional ClassFileManager with tempDir = C:\Users\PCGAMING\Desktop\Bigdata\spraksubmit\target\scala-2.12\classes.bak
+[debug] About to delete class files:
+[debug] We backup class files:
+[debug] Created transactional ClassFileManager with tempDir = C:\Users\PCGAMING\Desktop\Bigdata\spraksubmit\target\scala-2.12\classes.bak
+[debug] About to delete class files:
+[debug] We backup class files:
+[debug] Registering generated classes:
+[debug] 	main.class
+[debug] 	main$.class
+[debug] Removing the temporary directory used for backing up class files: C:\Users\PCGAMING\Desktop\Bigdata\spraksubmit\target\scala-2.12\classes.bak
